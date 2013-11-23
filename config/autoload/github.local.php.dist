@@ -14,7 +14,7 @@ $settings = array(
      * You can register a new application at:
      * https://github.com/settings/applications/new
      */
-    'github_client_id' => '',
+    'github_client_id' => '<%= @client_id %>',
     /**
      * Github Secret
      * 
@@ -23,7 +23,7 @@ $settings = array(
      * You can register a new application at:
      * https://github.com/settings/applications/new
      */
-    'github_secret' =>'',
+    'github_secret' =>'<%= @secret %>',
 );
 
 /**

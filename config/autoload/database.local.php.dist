@@ -7,8 +7,8 @@ return array(
     ),
     'db' => array(
         'driver'    => 'pdo',
-        'dsn'       => 'mysql:dbname=CHANGEME;host=localhost',
-        'username'  => 'CHANGEME',
-        'password'  => 'CHANGEME',
+        'dsn'       => 'mysql:dbname=<%= @name %>;host=localhost',
+        'username'  => '<%= @user %>',
+        'password'  => '<%= @password %>',
     ),
 );
