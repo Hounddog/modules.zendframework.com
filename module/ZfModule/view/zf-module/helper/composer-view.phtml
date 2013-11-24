@@ -1,17 +1,33 @@
-<div class="well">php composer.phar require "<?php echo $this->composerConf['name']?>"</div>
-
-<h3>Require</h3>
-<ul>
-    <?php foreach($this->composerConf['require'] as $requireName => $requireVersion){
-        echo "<li>{$requireName}: <span class='label label-success'>{$requireVersion}</span></li>";
-    }?>
-</ul>
-<?php if(!empty($this->composerConf['require-dev'])){?>
-    <h3>Require Dev</h3>
-
+<div class="block">
+    <div class="row">
+        <div class="span4">
+            <h4>
+                Require
+            </h4>
+            <hr>
+        </div>
+    </div>
     <ul>
-        <?php foreach($this->composerConf['require-dev'] as $requireName => $requireVersion){
+	    <?php foreach($this->composerConf['require'] as $requireName => $requireVersion){
+        	echo "<li>{$requireName}: <span class='label label-success'>{$requireVersion}</span></li>";
+    	}?>
+    </ul>
+</div>
+
+<?php if(!empty($this->composerConf['require-dev'])){?>
+<div class="block">
+    <div class="row">
+        <div class="span4">
+            <h4>
+                Require Dev
+            </h4>
+            <hr>
+        </div>
+    </div>
+    <ul>
+	    <?php foreach($this->composerConf['require-dev'] as $requireName => $requireVersion){
             echo "<li>{$requireName}: <span class='label label-important'>{$requireVersion}</span></li>";
         }?>
     </ul>
+</div>
 <?php } ?>
