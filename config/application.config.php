@@ -4,6 +4,22 @@ require(__DIR__.'/constants.php');
 
 return array(
     'modules' => array(
+        'Application',
+        'ZF\DevelopmentMode',
+        'ZF\Apigility',
+        'ZF\Apigility\Provider',
+        'ZF\Apigility\Welcome',
+        'ZF\Apigility\Documentation',
+        'ZF\ApiProblem',
+        'ZF\MvcAuth',
+        'ZF\OAuth2',
+        'ZF\Hal',
+        'ZF\ContentNegotiation',
+        'ZF\ContentValidation',
+        'ZF\Rest',
+        'ZF\Rpc',
+        'ZF\Versioning',
+        /* Old Modules may be replaced integrating Apigility */
         'LfjErrorLayout',
         'ZfcBase',
         'ZfcUser',
@@ -11,7 +27,6 @@ return array(
         'HybridAuth',
         'EdpGithub',
         'Application',
-        'AssetManager',
         'Assetic',
 		'User',
         'EdpModuleLayouts',
